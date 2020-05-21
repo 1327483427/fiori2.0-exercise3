@@ -72,14 +72,14 @@
 				<subSections>
 					<ObjectPageSubSection>
 						<blocks>
-							<m:Table id="suppliersTable" items="{path : 'products>/ProductCollectionStats/Filters/1/values'}">
+							<m:Table id="suppliersTable" items="{path : 'ProductCollectionStats>/Filters/1/values'}">
 								<m:columns>
 									<m:Column/>
 								</m:columns>
 								<m:items>
 									<m:ColumnListItem type="Navigation" press=".onSupplierPress">
 										<m:cells>
-											<m:ObjectIdentifier text="{products>text}"/>
+											<m:ObjectIdentifier text="{ProductCollectionStats>text}"/>
 										</m:cells>
 									</m:ColumnListItem>
 								</m:items>

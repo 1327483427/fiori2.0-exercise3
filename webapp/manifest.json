@@ -5,6 +5,15 @@
 		"type": "application",
 		"applicationVersion": {
 			"version": "1.0.0"
+		},
+		"dataSources": {
+			"products": {
+				"uri": "/",
+				"type": "OData",
+				"settings": {
+					"annotations": []
+				}
+			}
 		}
 	},
 	"sap.ui5": {
@@ -21,6 +30,16 @@
 				"sap.m": {},
 				"sap.f": {},
 				"sap.uxap": {}
+			}
+		},
+		"models": {
+			"products": {
+				"dataSource": "products",
+				"settings": {
+					"defaultBindingMode": "TwoWay",
+					"defaultCountMode": "Inline",
+					"refreshAfterChange": false
+				}
 			}
 		},
 		"config": {
@@ -87,5 +106,13 @@
 				}
 			}
 		}
+	},
+	"sap.platform.hcp": {
+		"uri": "webapp",
+		"_version": "1.1.0"
+	},
+	"sap.platform.abap": {
+		"uri": "/sap/bc/ui5_ui5/sap/zlqp_ui5_003/webapp",
+		"_version": "1.1.0"
 	}
 }

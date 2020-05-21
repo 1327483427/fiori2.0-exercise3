@@ -1,0 +1,34 @@
+{
+    "application": {
+        "id": "",
+        "title": "com.shunyu.lqp.fiori-exercise3.fiori-exercise3",
+        "type": "SAP_UI5_Component",
+        "componentUrl": "/webapp",
+        "appUrl": "#fioriexercise3-Display",
+        "navigationComponentName": "com.shunyu.lqp.fiori-exercise3",
+        "intentSemanticObject": "fiori-exercise3",
+        "intentAction": "Display",
+        "html5ApplicationName": "fioriexercise3",
+        "HCPParentApplicationName": ""
+    },
+    "assignment": {
+        "groups": [
+            "1487b043-e1c9-42d7-8922-31537ea9117c-1589470395189"
+        ],
+        "contentPackages": [
+            "d3637af4-875f-46ab-90e4-2895536ea54e"
+        ],
+        "categories": []
+    },
+    "tile": {
+        "type": "StaticTile",
+        "title": "Title",
+        "subtitle": "Subtitle",
+        "searchKeywords": "Title,Subtitle",
+        "displayIconUrl": "sap-icon://approvals",
+        "displayInfoText": "",
+        "size": "1x1",
+        "serviceURL": "",
+        "refreshInterval": ""
+    }
+}

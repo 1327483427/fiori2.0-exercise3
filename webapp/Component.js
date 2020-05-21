@@ -12,13 +12,12 @@ sap.ui.define([
 			manifest: "json"
 		},
 		init: function () {
-			var oModel, oProductsModel, oRouter;
+			var oModel, oProductsStatsModel, oRouter;
 			UIComponent.prototype.init.apply(this, arguments);
 			oModel = new JSONModel();
 			this.setModel(oModel);
-			oProductsModel = new JSONModel(sap.ui.require.toUrl("com/shunyu/lqp/fiori-exercise3/mock") + "/products.json");
-			oProductsModel.setSizeLimit(1000);
-			this.setModel(oProductsModel, "products");
+			oProductsStatsModel = new JSONModel(sap.ui.require.toUrl("com/shunyu/lqp/fiori-exercise3/localService/mockdata") + "/ProductCollectionStats.json");
+			this.setModel(oProductsStatsModel, "ProductCollectionStats");
 			oRouter = this.getRouter();
 			oRouter.attachBeforeRouteMatched(this._onBeforeRouteMatched, this);
 			oRouter.initialize();
